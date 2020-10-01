@@ -3,7 +3,6 @@
 
 """
 
-
 class Fraction:
     def __init__(self, num=0, den=1):
         self.__num: int = num
@@ -19,7 +18,7 @@ class Fraction:
     def num(self):
         return self.__num
 
-    @@property
+    @property
     def den(self):
         return self.__den
 
