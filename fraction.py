@@ -3,6 +3,7 @@
 
 """
 
+
 class Fraction:
     def __init__(self, num=0, den=1):
         self.__num: int = num
@@ -33,8 +34,9 @@ class Fraction:
         den = self.get_den() * f.get_den()
         return Fraction(num, den)
 
+
 if __name__ == "__main__":
-    f1 = Fraction(2,3)
+    f1 = Fraction(2, 3)
     print(f1, f1.get_num(), f1.get_den())
-    f2 = Fraction(4,5)
+    f2 = Fraction(4, 5)
     print(f1 * f2)
