@@ -47,14 +47,17 @@ class Self_Check_01:
     def shakespeare(self):
 
         closest = ('', -1)
-        quote = "methinks it is like a weasel"
+        quote = "ok"
         length = len(quote)
         letters = string.ascii_lowercase + ' '
 
-        for i in range(10000000):
+        for i in range(90):
             scrambled = self.getRandomShake(letters, length)
             close = self.check_str_shake(quote, scrambled)
             closest = close if close[1] > closest[1] else closest
+            print(scrambled )
+            if closest[1] == 3:
+                return closest
 
         return closest
 
